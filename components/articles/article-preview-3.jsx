@@ -6,6 +6,10 @@ const ArticlePreview3 = () => {
     frontEnd.src = "/scripts/article-preview-3.js"; // 👈 make sure to use the correct path
     frontEnd.id = "article-preview-3-js";
     document.body.appendChild(frontEnd);
+
+    return () => {
+      document.getElementById("article-preview-3-js").remove();
+    };
   });
 
   return (
