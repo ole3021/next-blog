@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+import "styles/global.scss";
+// import "styles/mapbox.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import React, { useContext } from "react";
+import Head from "next/head";
 
-export default MyApp
+import GlobalContextProvider, {
+  GlobalStateContext,
+} from "context/GlobalContextProvider";
+
+const DoztoCom = ({ Component, pageProps }) => {
+  return (
+    <GlobalContextProvider>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <script type="text/javascript" src="/scripts/util.js"></script>
+        <script>
+          document.getElementsByTagName("html")[0].className += " js";
+        </script>
+      </Head>
+      <Component {...pageProps} />
+    </GlobalContextProvider>
+  );
+};
+
+export default DoztoCom;
