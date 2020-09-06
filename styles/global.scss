@@ -2,8 +2,21 @@
 
 @import "./custom";
 
+// Layouts SCSS
+@import "../layouts/main-layout.scss";
+
+// Navigations SCSS
+@import "../components/navigations/side-navigation-2.scss";
+
 // Features SCSS
 @import "../components/features/feature-12.scss";
 
 // Articles SCSS
 @import "../components/articles/article-preview-3.scss";
+
+// Contents SCSS
+@import "../components/contents/revealing-hero.scss";
+@import "../components/contents/socials-3.scss";
+
+// Util SCSS
+@import "../components/utils/tooltip.scss";
