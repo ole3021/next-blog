@@ -82,12 +82,7 @@ const MainLayout = (props) => {
         </aside>
 
         <main class="position-relative z-index-1 flex-grow height-100vh">
-          {/* <div class="reset">{props.children}</div> */}
-
-          <div class="text-component">
-            {/* <p>Main content.</p> */}
-            {props.children}
-          </div>
+          {props.children}
         </main>
       </div>
     </>

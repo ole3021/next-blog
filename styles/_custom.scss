@@ -13,6 +13,7 @@
 @import "custom/forms";
 @import "custom/util";
 
+// Heart Beat
 .beat {
   animation: beat 1s infinite alternate;
 }
@@ -26,5 +27,21 @@
   }
   40% {
     transform: scale(1.25);
+  }
+}
+
+// UpDown Arrow
+.up-down {
+  animation: up-down-move 1.2s linear infinite;
+  position: absolute;
+}
+
+@keyframes up-down-move {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
   }
 }

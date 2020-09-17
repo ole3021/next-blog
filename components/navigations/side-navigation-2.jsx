@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 import {
   RiVipCrownLine,
   RiBookmark3Line,
@@ -6,11 +9,15 @@ import {
   RiFlaskLine,
   RiFileDownloadLine,
   RiHeartFill,
+  RiMailOpenLine,
+  RiImage2Line,
 } from "react-icons/ri";
 
 import Socials3 from "components/contents/socials-3";
 
-const SideNavigation2 = () => {
+const SideNavigation2 = ({ href }) => {
+  const router = useRouter();
+
   useEffect(() => {
     let frontEnd = document.createElement("script");
     frontEnd.src = "/scripts/side-navigation-2.js";
@@ -31,50 +38,69 @@ const SideNavigation2 = () => {
 
         <ul class="sidenav-v2__list grid gap-xxxxs">
           <li>
-            <a
-              class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-              href="#0"
-            >
-              <RiVipCrownLine class="margin-right-xxxs" size="25" />
-              <span class="sidenav-v2__link-text">Home</span>
-            </a>
+            <Link href="/">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/" ? "page" : ""}
+              >
+                <RiVipCrownLine class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Home</span>
+              </a>
+            </Link>
           </li>
 
           <li>
-            <a
-              class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-              href="#0"
-            >
-              <RiBookmark3Line class="margin-right-xxxs" size="25" />
-              <span class="sidenav-v2__link-text">Blogs</span>
-              <span class="sidenav-v2__counter">
-                10 <i class="sr-only">blogs</i>
-              </span>
-            </a>
+            <Link href="/blogs">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/blogs" ? "page" : ""}
+              >
+                <RiBookmark3Line class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Blogs</span>
+                <span class="sidenav-v2__counter">
+                  10 <i class="sr-only">blogs</i>
+                </span>
+              </a>
+            </Link>
           </li>
 
           <li>
-            <a
-              class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-              href="#0"
-              aria-current="page"
-            >
-              <RiCodeSSlashLine class="margin-right-xxxs" size="25" />
-              <span class="sidenav-v2__link-text">Projects</span>
-              <span class="sidenav-v2__counter">
-                12 <i class="sr-only">projects</i>
-              </span>
-            </a>
+            <Link href="/projects">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/projects" ? "page" : ""}
+              >
+                <RiCodeSSlashLine class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Projects</span>
+                <span class="sidenav-v2__counter">
+                  12 <i class="sr-only">projects</i>
+                </span>
+              </a>
+            </Link>
           </li>
 
           <li>
-            <a
-              class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-              href="#0"
-            >
-              <RiFlaskLine class="margin-right-xxxs" size="25" />
-              <span class="sidenav-v2__link-text">Experiments</span>
-            </a>
+            <Link href="/experiments">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/experiments" ? "page" : ""}
+              >
+                <RiFlaskLine class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Experiments</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/photos">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/photos" ? "page" : ""}
+              >
+                <RiImage2Line class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Photos</span>
+              </a>
+            </Link>
           </li>
         </ul>
 
@@ -84,13 +110,26 @@ const SideNavigation2 = () => {
 
         <ul class="sidenav-v2__list grid gap-xxxxs">
           <li>
-            <a
-              class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-              href="#0"
-            >
-              <RiFileDownloadLine class="margin-right-xxxs" size="25" />
-              <span class="sidenav-v2__link-text">Resume</span>
-            </a>
+            <Link href="/resume">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/resume" ? "page" : ""}
+              >
+                <RiFileDownloadLine class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Resume</span>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a
+                class="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
+                aria-current={router.pathname === "/contact" ? "page" : ""}
+              >
+                <RiMailOpenLine class="margin-right-xxxs" size="25" />
+                <span class="sidenav-v2__link-text">Contact</span>
+              </a>
+            </Link>
           </li>
         </ul>
       </nav>

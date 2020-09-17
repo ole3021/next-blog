@@ -1,8 +1,8 @@
 import { NextSeo } from "next-seo";
 
 import MainLayout from "layouts/MainLayout";
-import Feature13 from "components/contents/feature-13";
-import RelatedArticles from "components/articles/related-articles";
+import ArticlePreview3 from "components/articles/article-preview-3";
+import ArticlePreview4 from "components/articles/article-preview-4";
 
 export default function Home() {
   return (
@@ -13,8 +13,10 @@ export default function Home() {
           description="The blog site of Oliver.W know as ole3021"
         />
         <div class=" padding-lg">
-          <Feature13 />
-          <RelatedArticles />
+          <ArticlePreview4 />
+          <ArticlePreview3 />
+          <ArticlePreview3 />
+          <ArticlePreview3 />
         </div>
       </MainLayout>
     </div>

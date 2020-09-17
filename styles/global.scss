@@ -11,12 +11,23 @@
 // Features SCSS
 @import "../components/features/feature-12.scss";
 
+// Forms SCSS
+@import "../components/forms/wizard-form.scss";
+
 // Articles SCSS
 @import "../components/articles/article-preview-3.scss";
+@import "../components/articles/article-preview-4.scss";
 
 // Contents SCSS
 @import "../components/contents/revealing-hero.scss";
 @import "../components/contents/socials-3.scss";
+@import "../components/contents/feature-7.scss";
+@import "../components/contents/card-6.scss";
 
 // Util SCSS
 @import "../components/utils/tooltip.scss";
+@import "../components/utils/progress-bar.scss";
+@import "../components/utils/link-effects.scss";
+@import "../components/utils/diamond-grid.scss";
+@import "../components/utils/steps-2.scss";
+@import "../components/utils/choice-buttons.scss";
