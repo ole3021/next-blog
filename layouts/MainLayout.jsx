@@ -20,9 +20,9 @@ const MainLayout = (props) => {
 
   return (
     <>
-      <div class="padding-component hide@md no-js:is-hidden">
+      <div className="padding-component hide@md no-js:is-hidden">
         <button
-          class="btn btn--primary"
+          className="btn btn--primary"
           aria-controls="sidebar"
           style={{
             position: "fixed",
@@ -33,10 +33,10 @@ const MainLayout = (props) => {
         </button>
       </div>
 
-      <div class="flex@md">
+      <div className="flex@md">
         <aside
-          class="sidebar sidebar--static@md js-sidebar"
-          data-static-class="position-relative z-index-2 flex-grow max-width-xxxxs border-right"
+          className="sidebar sidebar--static@md js-sidebar"
+          data-static-classname="position-relative z-index-2 flex-grow max-width-xxxxs border-right"
           id="sidebar"
           aria-labelledby="sidebarTitle"
           style={{
@@ -44,27 +44,27 @@ const MainLayout = (props) => {
           }}
         >
           <div
-            class="sidebar__panel full-height flex flex-column"
+            className="sidebar__panel full-height flex flex-column"
             style={{
               position: "fixed",
               width: 320,
             }}
           >
-            <header class="sidebar__header z-index-2">
-              <h1 class="text-md text-truncate" id="sidebarTitle">
+            <header className="sidebar__header z-index-2">
+              <h1 className="text-md text-truncate" id="sidebarTitle">
                 Sidebar title
               </h1>
 
-              <button class="reset sidebar__close-btn js-sidebar__close-btn js-tab-focus">
-                <svg class="icon" viewBox="0 0 16 16">
+              <button className="reset sidebar__close-btn js-sidebar__close-btn js-tab-focus">
+                <svg className="icon" viewBox="0 0 16 16">
                   <title>Close panel</title>
                   <g
-                    stroke-width="1"
+                    strokeWidth="1"
                     stroke="currentColor"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                   >
                     <line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line>
                     <line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line>
@@ -73,15 +73,15 @@ const MainLayout = (props) => {
               </button>
             </header>
 
-            <div class="position-relative z-index-2 full-height">
-              <div class="position-relative padding-md full-height">
+            <div className="position-relative z-index-2 full-height">
+              <div className="position-relative padding-md full-height">
                 <SideNavigation2 />
               </div>
             </div>
           </div>
         </aside>
 
-        <main class="position-relative z-index-1 flex-grow height-100vh">
+        <main className="position-relative z-index-1 flex-grow height-100vh">
           {props.children}
         </main>
       </div>

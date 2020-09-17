@@ -14,7 +14,7 @@ const Tooltip = (props) => {
 
   return (
     <span
-      class="tooltip-trigger js-tooltip-trigger"
+      className="tooltip-trigger js-tooltip-trigger"
       title={props.tip || "NULL"}
     >
       {props.children}

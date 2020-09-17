@@ -20,21 +20,21 @@ const RevealingHero = () => {
 
   return (
     <>
-      <section class="position-relative z-index-2 bg shadow-sm">
-        <div class="container max-width-xl height-100vh flex">
+      <section className="position-relative z-index-2 bg shadow-sm">
+        <div className="container max-width-xl height-100vh flex">
           <div
-            class="text-component height-100vh flex flex-column"
+            className="text-component height-100vh flex flex-column"
             style={{ width: "100%" }}
           >
             <div> </div>
             <div
-              class="margin-top-auto flex flex-column"
+              className="margin-top-auto flex flex-column"
               style={{
                 paddingLeft: "7em",
               }}
             >
               <h1>I'm Oliver.W</h1>
-              <div class="flex">
+              <div className="flex">
                 <h1>I do &nbsp;</h1>
                 <TextLoop
                   mask={true}
@@ -48,17 +48,17 @@ const RevealingHero = () => {
               </div>
             </div>
             <div
-              class="margin-top-auto flex flex-center"
+              className="margin-top-auto flex flex-center"
               style={{ width: "100%", paddingBottom: 20 }}
             >
-              <RiArrowDownSLine size="36" class="up-down" />
+              <RiArrowDownSLine size="36" className="up-down" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="revealing-section bg z-index-1 js-revealing-section">
-        <div class="container max-width-xl padding-y-xl">
+      <section className="revealing-section bg z-index-1 js-revealing-section">
+        <div className="container max-width-xl padding-y-xl">
           <Intro />
           <Feature7 />
           <Skills />

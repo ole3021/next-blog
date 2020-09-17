@@ -106,7 +106,7 @@ Usage: codyhouse.co/license
 .sidebar--static,
 html:not(.js) .sidebar {
   flex-shrink: 0;
-  flex-grow: 1;
+  flex-grow: 0; // FIXED: 1 -> 0
 
   .sidebar__header {
     display: none;

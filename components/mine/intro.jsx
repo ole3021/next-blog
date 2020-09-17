@@ -7,10 +7,10 @@ import {
 
 const Intro = () => {
   return (
-    <section class="padding-bottom-xl">
-      <div class="container max-width-adaptive-xl">
-        <div class="grid gap-md">
-          <div class="text-component line-height-lg v-space-md col-7@md">
+    <section className="padding-bottom-xl">
+      <div className="container max-width-adaptive-xl">
+        <div className="grid gap-md">
+          <div className="text-component line-height-lg v-space-md col-7@md">
             <h1>Profile</h1>
             <p>
               I have been working as Software Engineering/Architect for over 5
@@ -23,24 +23,24 @@ const Intro = () => {
               about users experience, and internal values of software.
             </p>
           </div>
-          <div class="text-component line-height-lg v-space-md col-5@md">
+          <div className="text-component line-height-lg v-space-md col-5@md">
             <h1>Contacts</h1>
-            <div class="margin-bottom-xs flex">
-              <RiCellphoneLine class="margin-right-xxs" size="25" />
+            <div className="margin-bottom-xs flex">
+              <RiCellphoneLine className="margin-right-xxs" size="25" />
               <div>
                 +86 &#49;&#56;&#51;&#48;&#50;&#49;&#50;&#51;&#48;&#50;&#49;
               </div>
             </div>
-            <div class="margin-bottom-xs flex">
-              <RiMailLine class="margin-right-xxs" size="25" />
+            <div className="margin-bottom-xs flex">
+              <RiMailLine className="margin-right-xxs" size="25" />
               <div>ole&#51;&#48;&#50;&#49;@gmail.com</div>
             </div>
-            <div class="margin-bottom-xs flex">
-              <RiMapPinLine class="margin-right-xxs" size="25" />
+            <div className="margin-bottom-xs flex">
+              <RiMapPinLine className="margin-right-xxs" size="25" />
               <div>Shanghai,P.R.China</div>
             </div>
-            <div class="margin-bottom-xs flex">
-              <RiWechat2Line class="margin-right-xxs" size="25" />
+            <div className="margin-bottom-xs flex">
+              <RiWechat2Line className="margin-right-xxs" size="25" />
               <div>ole3021</div>
             </div>
           </div>

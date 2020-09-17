@@ -9,12 +9,12 @@ import Tooltip from "components/utils/tooltip";
 
 const Socials3 = () => {
   return (
-    <section class="socials-v3 padding-y-xs">
-      <div class="container max-width-lg">
-        <ul class="socials-v3__btns">
+    <section className="socials-v3 padding-y-xs">
+      <div className="container max-width-lg">
+        <ul className="socials-v3__btns">
           <li>
-            <Tooltip class="socials-v3__btn" tip="ole3021">
-              <a href="#" class="socials-v3__btn">
+            <Tooltip className="socials-v3__btn" tip="ole3021">
+              <a href="#" className="socials-v3__btn">
                 <RiWechat2Line size="25" />
               </a>
             </Tooltip>
@@ -24,7 +24,7 @@ const Socials3 = () => {
             <a
               href="https://twitter.com/ole3021"
               target="_blank"
-              class="socials-v3__btn"
+              className="socials-v3__btn"
             >
               <RiTwitterLine size="25" />
             </a>
@@ -34,7 +34,7 @@ const Socials3 = () => {
             <a
               href="https://github.com/ole3021"
               target="_blank"
-              class="socials-v3__btn"
+              className="socials-v3__btn"
             >
               <RiGithubLine size="25" />
             </a>
@@ -44,7 +44,7 @@ const Socials3 = () => {
             <a
               href="https://www.linkedin.com/in/ole3021/"
               target="_blank"
-              class="socials-v3__btn"
+              className="socials-v3__btn"
             >
               <RiLinkedinLine size="25" />
             </a>

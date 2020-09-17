@@ -13,18 +13,21 @@ const ProgressBar = (props) => {
   });
 
   return (
-    <div class="progress-bar flex flex-column items-center js-progress-bar">
+    <div className="progress-bar flex flex-column items-center js-progress-bar">
       {props.show ? (
         <>
-          <p class="sr-only" aria-live="polite" aria-atomic="true">
+          <p className="sr-only" aria-live="polite" aria-atomic="true">
             Progress value is{" "}
-            <span class="js-progress-bar__aria-value">
+            <span className="js-progress-bar__aria-value">
               {" "}
               {`${props.value}%`}
             </span>
           </p>
 
-          <span class="progress-bar__value margin-bottom-xs" aria-hidden="true">
+          <span
+            className="progress-bar__value margin-bottom-xs"
+            aria-hidden="true"
+          >
             {`${props.value}%`}
           </span>
         </>
@@ -32,9 +35,9 @@ const ProgressBar = (props) => {
         ""
       )}
 
-      <div class="progress-bar__bg" aria-hidden="true">
+      <div className="progress-bar__bg" aria-hidden="true">
         <div
-          class="progress-bar__fill color-primary"
+          className="progress-bar__fill color-primary"
           style={{ width: `${props.value || 0}%` }}
         ></div>
       </div>

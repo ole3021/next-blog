@@ -23,45 +23,45 @@ const WizardForm = () => {
 
   return (
     <form
-      class="wiz-form bg height-100vh js-wiz-form"
+      className="wiz-form bg height-100vh js-wiz-form"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div class="wiz-form__body">
-        <fieldset class="wiz-form__step js-wiz-form__step">
-          <div class="container max-width-xs">
-            <header class="padding-top-md">
-              <p class="text-sm color-contrast-medium line-height-xs">
-                Step 1 <span class="hide@md">of 3</span>
+      <div className="wiz-form__body">
+        <fieldset className="wiz-form__step js-wiz-form__step">
+          <div className="container max-width-xs">
+            <header className="padding-top-md">
+              <p className="text-sm color-contrast-medium line-height-xs">
+                Step 1 <span className="hide@md">of 3</span>
               </p>
-              <h1 class="text-xl">Account Info</h1>
+              <h1 className="text-xl">Account Info</h1>
             </header>
 
-            <div class="padding-y-md">
-              <div class="grid gap-sm">
-                <div class="col-6@md">
+            <div className="padding-y-md">
+              <div className="grid gap-sm">
+                <div className="col-6@md">
                   <label
-                    class="form-label margin-bottom-xxs"
+                    className="form-label margin-bottom-xxs"
                     htmlFor="input-name"
                   >
                     Name
                   </label>
                   <input
-                    class="form-control width-100%"
+                    className="form-control width-100%"
                     type="text"
                     name="name"
                     ref={register}
                   />
                 </div>
 
-                <div class="col-6@md">
+                <div className="col-6@md">
                   <label
-                    class="form-label margin-bottom-xxs"
+                    className="form-label margin-bottom-xxs"
                     htmlFor="input-email"
                   >
                     Email
                   </label>
                   <input
-                    class="form-control width-100%"
+                    className="form-control width-100%"
                     type="email"
                     name="email"
                     ref={register}
@@ -72,33 +72,33 @@ const WizardForm = () => {
           </div>
         </fieldset>
 
-        <fieldset class="wiz-form__step wiz-form__step--next js-wiz-form__step">
-          <div class="container max-width-xs">
-            <header class="padding-top-md">
-              <p class="text-sm color-contrast-medium line-height-xs">
-                Step 2 <span class="hide@md">of 3</span>
+        <fieldset className="wiz-form__step wiz-form__step--next js-wiz-form__step">
+          <div className="container max-width-xs">
+            <header className="padding-top-md">
+              <p className="text-sm color-contrast-medium line-height-xs">
+                Step 2 <span className="hide@md">of 3</span>
               </p>
-              <h1 class="text-xl">Product</h1>
+              <h1 className="text-xl">Product</h1>
             </header>
-            <div class="padding-y-md">fdsfds</div>
+            <div className="padding-y-md">fdsfds</div>
           </div>
         </fieldset>
 
-        <fieldset class="wiz-form__step wiz-form__step--next js-wiz-form__step">
-          <div class="container max-width-xs">
-            <header class="padding-top-md">
-              <p class="text-sm color-contrast-medium line-height-xs">
-                Step 3 <span class="hide@md">of 3</span>
+        <fieldset className="wiz-form__step wiz-form__step--next js-wiz-form__step">
+          <div className="container max-width-xs">
+            <header className="padding-top-md">
+              <p className="text-sm color-contrast-medium line-height-xs">
+                Step 3 <span className="hide@md">of 3</span>
               </p>
-              <h1 class="text-xl">Contact</h1>
+              <h1 className="text-xl">Contact</h1>
             </header>
 
-            <div class="padding-y-md">
-              <p class="margin-bottom-sm">Select a contact method:</p>
+            <div className="padding-y-md">
+              <p className="margin-bottom-sm">Select a contact method:</p>
 
-              <div class="choice-btns gap-xxs js-choice-btns">
-                <div class="choice-btn padding-sm js-choice-btn">
-                  <div class="choice-btn__fallback">
+              <div className="choice-btns gap-xxs js-choice-btns">
+                <div className="choice-btn padding-sm js-choice-btn">
+                  <div className="choice-btn__fallback">
                     <input
                       name="wiz-contact-check-button-1"
                       type="checkbox"
@@ -109,9 +109,9 @@ const WizardForm = () => {
                     </label>
                   </div>
 
-                  <div class="choice-btn__grid" aria-hidden="true">
-                    <div class="choice-btn__input choice-btn__input--checkbox">
-                      <svg class="icon" viewBox="0 0 16 16">
+                  <div className="choice-btn__grid" aria-hidden="true">
+                    <div className="choice-btn__input choice-btn__input--checkbox">
+                      <svg className="icon" viewBox="0 0 16 16">
                         <path
                           fill="none"
                           stroke="currentColor"
@@ -123,12 +123,14 @@ const WizardForm = () => {
                       </svg>
                     </div>
 
-                    <p class="color-contrast-higher font-bold">Phone call</p>
+                    <p className="color-contrast-higher font-bold">
+                      Phone call
+                    </p>
                   </div>
                 </div>
 
-                <div class="choice-btn padding-sm js-choice-btn">
-                  <div class="choice-btn__fallback">
+                <div className="choice-btn padding-sm js-choice-btn">
+                  <div className="choice-btn__fallback">
                     <input
                       name="wiz-contact-check-button-2"
                       type="checkbox"
@@ -139,9 +141,9 @@ const WizardForm = () => {
                     </label>
                   </div>
 
-                  <div class="choice-btn__grid" aria-hidden="true">
-                    <div class="choice-btn__input choice-btn__input--checkbox">
-                      <svg class="icon" viewBox="0 0 16 16">
+                  <div className="choice-btn__grid" aria-hidden="true">
+                    <div className="choice-btn__input choice-btn__input--checkbox">
+                      <svg className="icon" viewBox="0 0 16 16">
                         <path
                           fill="none"
                           stroke="currentColor"
@@ -153,12 +155,14 @@ const WizardForm = () => {
                       </svg>
                     </div>
 
-                    <p class="color-contrast-higher font-bold">Video call</p>
+                    <p className="color-contrast-higher font-bold">
+                      Video call
+                    </p>
                   </div>
                 </div>
 
-                <div class="choice-btn padding-sm js-choice-btn">
-                  <div class="choice-btn__fallback">
+                <div className="choice-btn padding-sm js-choice-btn">
+                  <div className="choice-btn__fallback">
                     <input
                       name="wiz-contact-check-button-3"
                       type="checkbox"
@@ -167,9 +171,9 @@ const WizardForm = () => {
                     <label htmlFor="wiz-contact-check-button-3">Email</label>
                   </div>
 
-                  <div class="choice-btn__grid" aria-hidden="true">
-                    <div class="choice-btn__input choice-btn__input--checkbox">
-                      <svg class="icon" viewBox="0 0 16 16">
+                  <div className="choice-btn__grid" aria-hidden="true">
+                    <div className="choice-btn__input choice-btn__input--checkbox">
+                      <svg className="icon" viewBox="0 0 16 16">
                         <path
                           fill="none"
                           stroke="currentColor"
@@ -181,7 +185,7 @@ const WizardForm = () => {
                       </svg>
                     </div>
 
-                    <p class="color-contrast-higher font-bold">Email</p>
+                    <p className="color-contrast-higher font-bold">Email</p>
                   </div>
                 </div>
               </div>
@@ -190,37 +194,37 @@ const WizardForm = () => {
         </fieldset>
       </div>
 
-      <footer class="wiz-form__footer bg padding-y-sm shadow-md">
-        <div class="container">
-          <div class="grid gap-sm items-center">
-            <div class="flex col col-3@md">
+      <footer className="wiz-form__footer bg padding-y-sm shadow-md">
+        <div className="container">
+          <div className="grid gap-sm items-center">
+            <div className="flex col col-3@md">
               <a
-                class="btn btn--subtle flex-grow flex-grow-0@md js-wiz-form__prev"
+                className="btn btn--subtle flex-grow flex-grow-0@md js-wiz-form__prev"
                 href="#0"
               >
                 &larr; Back
               </a>
             </div>
 
-            <div class="display@md col-6@md">
+            <div className="display@md col-6@md">
               <div
-                class="steps-v2 max-width-xs margin-x-auto js-wiz-form__step-indicator"
+                className="steps-v2 max-width-xs margin-x-auto js-wiz-form__step-indicator"
                 style={{
                   "--step-v2-current-step": 1,
                 }}
               >
-                <p class="text-sm color-contrast-medium margin-bottom-xs">
-                  Step <span class="js-steps-v2__current-step">1</span> of{" "}
-                  <span class="js-steps-v2__tot-steps">3</span>
+                <p className="text-sm color-contrast-medium margin-bottom-xs">
+                  Step <span className="js-steps-v2__current-step">1</span> of{" "}
+                  <span className="js-steps-v2__tot-steps">3</span>
                 </p>
 
-                <div class="steps-v2__indicator" aria-hidden="true"></div>
+                <div className="steps-v2__indicator" aria-hidden="true"></div>
               </div>
             </div>
 
-            <div class="flex justify-end@md col col-3@md">
+            <div className="flex justify-end@md col col-3@md">
               <a
-                class="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__next"
+                className="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__next"
                 href="#0"
               >
                 Next &rarr;
@@ -228,9 +232,12 @@ const WizardForm = () => {
 
               <button
                 type="submit"
-                class="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__submit"
+                className="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__submit"
               >
-                <svg class="icon icon--xs margin-right-xxs" viewBox="0 0 12 12">
+                <svg
+                  className="icon icon--xs margin-right-xxs"
+                  viewBox="0 0 12 12"
+                >
                   <title>check</title>
                   <polyline
                     points="0.5 7.5 3.5 10.5 11.5 1.5"

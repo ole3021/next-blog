@@ -12,7 +12,7 @@ export default function Home() {
           title="Ole3021 Blog"
           description="The blog site of Oliver.W know as ole3021"
         />
-        <div class=" padding-lg">
+        <div className=" padding-lg">
           <ArticlePreview4 />
           <ArticlePreview3 />
           <ArticlePreview3 />
