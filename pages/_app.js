@@ -1,5 +1,4 @@
 import "styles/global.scss";
-// import "styles/mapbox.css";
 
 import React, { useContext } from "react";
 import Head from "next/head";

@@ -53,7 +53,7 @@ const SideNavigation2 = ({ href }) => {
             <Link href="/blogs">
               <a
                 className="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-                aria-current={router.pathname === "/blogs" ? "page" : ""}
+                aria-current={router.pathname.includes("/blogs") ? "page" : ""}
               >
                 <RiBookmark3Line className="margin-right-xxxs" size="25" />
                 <span className="sidenav-v2__link-text">Blogs</span>
