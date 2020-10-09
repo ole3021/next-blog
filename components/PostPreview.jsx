@@ -1,4 +1,4 @@
-const ArticlePreview4 = () => {
+const PostPreview = () => {
   return (
     <article className="story-v4 padding-y-lg">
       <div className="container max-width-adaptive-md margin-bottom-lg">
@@ -73,4 +73,4 @@ const ArticlePreview4 = () => {
   );
 };
 
-export default ArticlePreview4;
+export default PostPreview;

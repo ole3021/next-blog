@@ -1,4 +1,4 @@
-const Feature7 = () => {
+const PostCard = () => {
   return (
     <a href="#0" className="card-v6" aria-label="Description of the link">
       <figure className="card-v6__img">
@@ -33,4 +33,4 @@ const Feature7 = () => {
   );
 };
 
-export default Feature7;
+export default PostCard;

@@ -1,12 +1,12 @@
-const Feature13 = () => {
+const HomeHero = () => {
   return (
     <section className="position-relative z-index-1 padding-y-lg">
       <div className="container max-width-adaptive-lg">
         <div className="grid gap-md items-center">
           <div className="col-6@md">
             <div className="text-component">
-              <p className="text-sm color-contrast-medium">This is a Label</p>
-              <h1>Lorem ipsum dolor sit.</h1>
+              <p className="text-sm color-contrast-medium">Geek</p>
+              <h1>Hello World</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
                 rem neque doloribus impedit explicabo minus laborum cupiditate
@@ -14,7 +14,7 @@ const Feature13 = () => {
               </p>
             </div>
 
-            <div className="margin-top-sm">
+            {/* <div className="margin-top-sm">
               <div className="flex flex-wrap gap-sm items-center">
                 <a href="#0" className="btn btn--primary">
                   Download
@@ -23,7 +23,7 @@ const Feature13 = () => {
                   Learn more
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-6@md">
@@ -69,4 +69,4 @@ const Feature13 = () => {
   );
 };
 
-export default Feature13;
+export default HomeHero;

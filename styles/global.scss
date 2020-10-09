@@ -2,32 +2,28 @@
 
 @import "./custom";
 
+// Util SCSS
+@import "./utils/tooltip.scss";
+@import "./utils/progress-bar.scss";
+@import "./utils/link-effects.scss";
+@import "./utils/diamond-grid.scss";
+@import "./utils/steps-2.scss";
+@import "./utils/choice-buttons.scss";
+
 // Layouts SCSS
-@import "../layouts/main-layout.scss";
+@import "./layouts/side-nav-layout.scss";
+@import "./components/dark-switch.scss";
+@import "./components/navigations.scss";
+@import "./components/socials.scss";
 
-// Navigations SCSS
-@import "../components/navigations/side-navigation-2.scss";
+@import "./components/home-cover.scss";
+@import "./components/home-hobbits.scss";
 
-// Features SCSS
-@import "../components/features/feature-12.scss";
+@import "./components/time-line.scss";
+
+@import "./components/post-card.scss";
+@import "./components/post-preview.scss";
+@import "./components/post-list-item.scss";
 
 // Forms SCSS
-@import "../components/forms/wizard-form.scss";
-
-// Articles SCSS
-@import "../components/articles/article-preview-3.scss";
-@import "../components/articles/article-preview-4.scss";
-
-// Contents SCSS
-@import "../components/contents/revealing-hero.scss";
-@import "../components/contents/socials-3.scss";
-@import "../components/contents/feature-7.scss";
-@import "../components/contents/card-6.scss";
-
-// Util SCSS
-@import "../components/utils/tooltip.scss";
-@import "../components/utils/progress-bar.scss";
-@import "../components/utils/link-effects.scss";
-@import "../components/utils/diamond-grid.scss";
-@import "../components/utils/steps-2.scss";
-@import "../components/utils/choice-buttons.scss";
+@import "./components/contact-form.scss";

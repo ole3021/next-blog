@@ -7,10 +7,10 @@ import {
 
 import Tooltip from "components/utils/tooltip";
 
-const Socials3 = () => {
+const Socials = () => {
   return (
     <section className="socials-v3 padding-y-xs">
-      <div className="container max-width-lg">
+      <div className="max-width-lg">
         <ul className="socials-v3__btns">
           <li>
             <Tooltip className="socials-v3__btn" tip="ole3021">
@@ -55,4 +55,4 @@ const Socials3 = () => {
   );
 };
 
-export default Socials3;
+export default Socials;

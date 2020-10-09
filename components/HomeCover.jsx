@@ -2,19 +2,15 @@ import { useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import TextLoop from "react-text-loop";
 
-import Intro from "components/mine/intro";
-import Feature7 from "components/contents/feature-7";
-import Skills from "components/mine/skills";
-
-const RevealingHero = () => {
+const HomeCover = (props) => {
   useEffect(() => {
     let frontEnd = document.createElement("script");
-    frontEnd.src = "/scripts/revealing-hero.js";
-    frontEnd.id = "revealing-hero-js";
+    frontEnd.src = "/scripts/home-cover.js";
+    frontEnd.id = "home-cover-js";
     document.body.appendChild(frontEnd);
 
     return () => {
-      document.getElementById("revealing-hero-js").remove();
+      document.getElementById("home-cover-js").remove();
     };
   });
 
@@ -59,13 +55,11 @@ const RevealingHero = () => {
 
       <section className="revealing-section bg z-index-1 js-revealing-section">
         <div className="container max-width-xl padding-y-xl">
-          <Intro />
-          <Feature7 />
-          <Skills />
+          {props.children}
         </div>
       </section>
     </>
   );
 };
 
-export default RevealingHero;
+export default HomeCover;

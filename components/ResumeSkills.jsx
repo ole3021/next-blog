@@ -1,9 +1,9 @@
 import ProgressBar from "components/utils/progress-bar";
 
-const Skills = () => {
+const ResumeSkills = () => {
   return (
     <section className="padding-bottom-xl">
-      <div className="container max-width-adaptive-lg">
+      <div className="container">
         <div className="grid gap-md">
           <div className="text-component line-height-lg">
             <h1>Skills</h1>
@@ -78,4 +78,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default ResumeSkills;

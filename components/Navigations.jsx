@@ -13,9 +13,10 @@ import {
   RiImage2Line,
 } from "react-icons/ri";
 
-import Socials3 from "components/contents/socials-3";
+import Socials from "components/Socials";
+import DarkSwitch from "components/DarkSwitch";
 
-const SideNavigation2 = ({ href }) => {
+const Navigations = (props) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -64,7 +65,7 @@ const SideNavigation2 = ({ href }) => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="/projects">
               <a
                 className="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
@@ -77,9 +78,9 @@ const SideNavigation2 = ({ href }) => {
                 </span>
               </a>
             </Link>
-          </li>
+          </li> */}
 
-          <li>
+          {/* <li>
             <Link href="/experiments">
               <a
                 className="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
@@ -89,7 +90,7 @@ const SideNavigation2 = ({ href }) => {
                 <span className="sidenav-v2__link-text">Experiments</span>
               </a>
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link href="/photos">
@@ -133,13 +134,11 @@ const SideNavigation2 = ({ href }) => {
           </li>
         </ul>
       </nav>
+
       <div className="margin-top-auto padding-y-xs">
-        <Socials3 />
-        <nav
-          className="offnav__subnav "
-          role="navigation"
-          aria-label="Secondary"
-        >
+        {/* <DarkSwitch /> */}
+        <Socials />
+        <nav role="navigation" aria-label="Secondary">
           <ul className="flex flex-column gap-sm flex-row text-xs">
             <li style={{ paddingTop: 3 }}>&copy; 2020 Build with</li>
             <RiHeartFill
@@ -158,4 +157,4 @@ const SideNavigation2 = ({ href }) => {
   );
 };
 
-export default SideNavigation2;
+export default Navigations;

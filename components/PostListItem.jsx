@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const ArticlePreview3 = () => {
+const PostListItem = () => {
   useEffect(() => {
     let frontEnd = document.createElement("script");
     frontEnd.src = "/scripts/article-preview-3.js"; // 👈 make sure to use the correct path
@@ -64,4 +64,4 @@ const ArticlePreview3 = () => {
   );
 };
 
-export default ArticlePreview3;
+export default PostListItem;

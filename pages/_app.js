@@ -1,5 +1,6 @@
 import "styles/global.scss";
 // import "styles/mapbox.css";
+import SideNavLayout from "layouts/SideNavLayout";
 
 import React, { useContext } from "react";
 import Head from "next/head";
@@ -18,7 +19,9 @@ const DoztoCom = ({ Component, pageProps }) => {
           document.getElementsByTagName("html")[0].className += " js";
         </script>
       </Head>
-      <Component {...pageProps} />
+      <SideNavLayout>
+        <Component {...pageProps} />
+      </SideNavLayout>
     </GlobalContextProvider>
   );
 };

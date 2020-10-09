@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-// import { GlobalStateContext } from "context/GlobalContextProvider";
+import { useEffect, useContext } from "react";
+import { GlobalStateContext } from "context/GlobalContextProvider";
 
-import SideNavigation2 from "components/navigations/side-navigation-2";
+import Navigations from "components/Navigations";
 
-const MainLayout = (props) => {
-  //   const state = useContext(GlobalStateContext);
+const SideNavLayout = (props) => {
+  const state = useContext(GlobalStateContext);
   // const { navigation, meta, contact } = props;
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const MainLayout = (props) => {
 
   return (
     <>
-      <div className="padding-component hide@md no-js:is-hidden">
+      <div className="hide@md no-js:is-hidden">
         <button
           className="btn btn--primary"
           aria-controls="sidebar"
@@ -33,7 +33,7 @@ const MainLayout = (props) => {
         </button>
       </div>
 
-      <div className="flex@md">
+      <div className="flex@md" data-theme={state.isDark ? "dark" : "default"}>
         <aside
           className="sidebar sidebar--static@md js-sidebar"
           data-static-classname="position-relative z-index-2 flex-grow max-width-xxxxs border-right"
@@ -75,7 +75,7 @@ const MainLayout = (props) => {
 
             <div className="position-relative z-index-2 full-height">
               <div className="position-relative padding-md full-height">
-                <SideNavigation2 />
+                <Navigations />
               </div>
             </div>
           </div>
@@ -89,4 +89,4 @@ const MainLayout = (props) => {
   );
 };
 
-export default MainLayout;
+export default SideNavLayout;

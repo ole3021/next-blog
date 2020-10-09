@@ -1,4 +1,4 @@
-const Feature7 = () => {
+const HomeHobbits = () => {
   return (
     <section className="feature-v7 padding-bottom-xl">
       <div className="container max-width-adaptive-lg">
@@ -10,7 +10,7 @@ const Feature7 = () => {
             <div className="feature-v7__item flex gap-sm">
               <figure>
                 <img
-                  src="../../../app/assets/img/feature-v7-img-1.svg"
+                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-1.jpg"
                   alt="Image description"
                 />
               </figure>
@@ -29,7 +29,7 @@ const Feature7 = () => {
             <div className="feature-v7__item flex gap-sm">
               <figure>
                 <img
-                  src="../../../app/assets/img/feature-v7-img-2.svg"
+                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-2.jpg"
                   alt="Image description"
                 />
               </figure>
@@ -48,7 +48,7 @@ const Feature7 = () => {
             <div className="feature-v7__item flex gap-sm">
               <figure>
                 <img
-                  src="../../../app/assets/img/feature-v7-img-3.svg"
+                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-3.jpg"
                   alt="Image description"
                 />
               </figure>
@@ -67,7 +67,7 @@ const Feature7 = () => {
             <div className="feature-v7__item flex gap-sm">
               <figure>
                 <img
-                  src="../../../app/assets/img/feature-v7-img-4.svg"
+                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-4.jpg"
                   alt="Image description"
                 />
               </figure>
@@ -87,4 +87,4 @@ const Feature7 = () => {
   );
 };
 
-export default Feature7;
+export default HomeHobbits;

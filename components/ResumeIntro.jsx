@@ -5,7 +5,7 @@ import {
   RiMapPinLine,
 } from "react-icons/ri";
 
-const Intro = () => {
+const ResumeIntro = () => {
   return (
     <section className="padding-bottom-xl">
       <div className="container max-width-adaptive-xl">
@@ -50,4 +50,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default ResumeIntro;

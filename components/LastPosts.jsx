@@ -1,6 +1,6 @@
-import Card6 from "components/contents/card-6";
+import PostCard from "components/PostCard";
 
-const RelatedArticles = () => {
+const LastPosts = () => {
   return (
     <section className="padding-y-lg">
       <div className="container max-width-adaptive-lg">
@@ -8,13 +8,13 @@ const RelatedArticles = () => {
 
         <div className="grid gap-md">
           <div className="padding-y-lg col-6@md col-4@xl">
-            <Card6 />
+            <PostCard />
           </div>
           <div className="padding-y-lg col-6@md col-4@xl">
-            <Card6 />
+            <PostCard />
           </div>
           <div className="padding-y-lg col-6@md col-4@xl">
-            <Card6 />
+            <PostCard />
           </div>
         </div>
       </div>
@@ -22,4 +22,4 @@ const RelatedArticles = () => {
   );
 };
 
-export default RelatedArticles;
+export default LastPosts;

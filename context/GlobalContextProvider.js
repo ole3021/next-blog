@@ -9,6 +9,7 @@ const initState = {
 };
 
 const reducer = (state, action) => {
+  console.log(">>> update", state, action);
   switch (action.type) {
     case "TOGGLE_THEME":
       return {

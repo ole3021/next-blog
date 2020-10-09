@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-const WizardForm = () => {
+const ContactForm = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
@@ -258,4 +258,4 @@ const WizardForm = () => {
   );
 };
 
-export default WizardForm;
+export default ContactForm;
