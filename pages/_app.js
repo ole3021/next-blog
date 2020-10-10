@@ -9,7 +9,7 @@ import GlobalContextProvider, {
   GlobalStateContext,
 } from "context/GlobalContextProvider";
 
-const DoztoCom = ({ Component, pageProps }) => {
+const DoztoCom = ({ Component, pageProps, postCount }) => {
   return (
     <GlobalContextProvider>
       <Head>

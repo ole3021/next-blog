@@ -18,6 +18,7 @@ import DarkSwitch from "components/DarkSwitch";
 
 const Navigations = (props) => {
   const router = useRouter();
+  const { postsCount } = props;
 
   useEffect(() => {
     let frontEnd = document.createElement("script");
@@ -54,13 +55,15 @@ const Navigations = (props) => {
             <Link href="/blogs">
               <a
                 className="sidenav-v2__link js-sidenav-v2__link js-tab-focus"
-                aria-current={router.pathname === "/blogs" ? "page" : ""}
+                aria-current={
+                  router.pathname === "/blogs" ||
+                  router.pathname.includes("post")
+                    ? "page"
+                    : ""
+                }
               >
                 <RiBookmark3Line className="margin-right-xxxs" size="25" />
                 <span className="sidenav-v2__link-text">Blogs</span>
-                <span className="sidenav-v2__counter">
-                  10 <i className="sr-only">blogs</i>
-                </span>
               </a>
             </Link>
           </li>

@@ -1,12 +1,13 @@
 import { NextSeo } from "next-seo";
 
-// import Feature13 from "components/contents/feature-13";
+import { getAllPosts } from "libs/posts";
+
 import LastPosts from "components/LastPosts";
 import HomeCover from "components/HomeCover";
 import HomeHero from "components/HomeHero";
 import HomeHobbits from "components/HomeHobbits";
 
-export default function Home() {
+export default function Home({ lastPosts }) {
   return (
     <div>
       <>
@@ -18,10 +19,18 @@ export default function Home() {
           <div className=" padding-lg">
             <HomeHero />
             <HomeHobbits />
-            <LastPosts />
+            <LastPosts posts={lastPosts} />
           </div>
         </HomeCover>
       </>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts(["title", "meta", "category", "tags", "cover"]);
+
+  return {
+    props: { lastPosts: allPosts.slice(0, 3) },
+  };
 }

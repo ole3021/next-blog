@@ -5,7 +5,6 @@ import Navigations from "components/Navigations";
 
 const SideNavLayout = (props) => {
   const state = useContext(GlobalStateContext);
-  // const { navigation, meta, contact } = props;
 
   useEffect(() => {
     let frontEnd = document.createElement("script");

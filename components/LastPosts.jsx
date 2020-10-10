@@ -1,21 +1,17 @@
 import PostCard from "components/PostCard";
 
-const LastPosts = () => {
+const LastPosts = ({ posts }) => {
   return (
     <section className="padding-y-lg">
       <div className="container max-width-adaptive-lg">
-        <h1>My Latest Blogs</h1>
+        <h1>Latest Blogs</h1>
 
         <div className="grid gap-md">
-          <div className="padding-y-lg col-6@md col-4@xl">
-            <PostCard />
-          </div>
-          <div className="padding-y-lg col-6@md col-4@xl">
-            <PostCard />
-          </div>
-          <div className="padding-y-lg col-6@md col-4@xl">
-            <PostCard />
-          </div>
+          {posts.map((post, index) => (
+            <div className="padding-y-lg col-6@md col-4@xl" key={index}>
+              <PostCard post={post} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "codyhouse-framework": "^2.7.6",
+    "gray-matter": "^4.0.2",
     "next": "9.5.1",
     "next-seo": "^4.7.3",
+    "raw-loader": "^4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hook-form": "^6.8.2",
     "react-icons": "^3.11.0",
+    "react-markdown": "^4.3.1",
     "react-text-loop": "^2.3.0",
     "sass": "^1.26.10"
   },
