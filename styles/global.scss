@@ -2,8 +2,33 @@
 
 @import "./custom";
 
-// Features SCSS
-@import "../components/features/feature-12.scss";
+// Util SCSS
+@import "./utils/tooltip.scss";
+@import "./utils/progress-bar.scss";
+@import "./utils/link-effects.scss";
+@import "./utils/diamond-grid.scss";
+@import "./utils/steps-2.scss";
+@import "./utils/choice-buttons.scss";
+@import "./utils/responsive-iframe.scss";
+@import "./utils/image-zoom.scss";
 
-// Articles SCSS
-@import "../components/articles/article-preview-3.scss";
+// Layouts SCSS
+@import "./layouts/side-nav-layout.scss";
+@import "./components/dark-switch.scss";
+@import "./components/navigations.scss";
+@import "./components/socials.scss";
+
+@import "./components/home-cover.scss";
+@import "./components/home-hobbits.scss";
+
+@import "./components/time-line.scss";
+
+@import "./components/post-card.scss";
+@import "./components/post-preview.scss";
+@import "./components/post-list-item.scss";
+@import "./components/markdown-body.css";
+
+@import "./components/photos.scss";
+
+// Forms SCSS
+@import "./components/contact-form.scss";
