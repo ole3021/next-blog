@@ -1,285 +1,75 @@
+import { useEffect } from "react";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
-export default function Home() {
+import { getAllPhotoss } from "libs/photos";
+
+export default function Home({ allPhotos }) {
+  useEffect(() => {
+    let frontEnd = document.createElement("script");
+    frontEnd.src = "/scripts/photos.js";
+    frontEnd.id = "photos-js";
+    document.body.appendChild(frontEnd);
+    let imageZoom = document.createElement("script");
+    imageZoom.src = "/scripts/image-zoom.js";
+    imageZoom.id = "image-zoom-js";
+    document.body.appendChild(imageZoom);
+
+    return () => {
+      document.getElementById("photos-js").remove();
+      document.getElementById("image-zoom-js").remove();
+    };
+  });
+
   return (
     <div>
-      <>
-        <NextSeo
-          title="Ole3021 Blog"
-          description="The blog site of Oliver.W know as ole3021"
-        />
-        <div class="container max-width-adaptive-lg">
-          <div class="grid gap-sm">
-            <a
-              href="#0"
-              class="card-v9 radius-md col-8@md"
-              aria-labelledby="card-title-1"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-1.jpg');",
-              }}
+      <NextSeo
+        title="Ole3021 Blog"
+        description="The blog site of Oliver.W know as ole3021"
+      />
+      <div className="container max-width-adaptive-lg">
+        <div className="masonry js-masonry">
+          <div className="masonry__loader" aria-hidden="true">
+            <svg
+              className="icon icon--md icon--is-spinning"
+              viewBox="0 0 32 32"
             >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Travels
-                  </p>
-                  <h1 id="card-title-1" class="text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-2"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-2.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Experiences
-                  </p>
-                  <h1 id="card-title-2" class="text-xl">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-3"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-3.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Experiences
-                  </p>
-                  <h1 id="card-title-3" class="text-xl">
-                    Lorem ipsum dolor sit amet.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-8@md"
-              aria-labelledby="card-title-4"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-4.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Travels
-                  </p>
-                  <h1 id="card-title-4" class="text-xl">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-5"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-5.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Tours
-                  </p>
-                  <h1 id="card-title-5" class="text-xl">
-                    Lorem ipsum dolor sit amet.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-6"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-6.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Travels
-                  </p>
-                  <h1 id="card-title-6" class="text-xl">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-7"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-7.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Friends
-                  </p>
-                  <h1 id="card-title-7" class="text-xl">
-                    Lorem ipsum dolor sit.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-7"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-7.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Friends
-                  </p>
-                  <h1 id="card-title-7" class="text-xl">
-                    Lorem ipsum dolor sit.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <a
-              href="#0"
-              class="card-v9 radius-md col-8@md"
-              aria-labelledby="card-title-7"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-4.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Friends
-                  </p>
-                  <h1 id="card-title-7" class="text-xl">
-                    Lorem ipsum dolor sit.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <a
-              href="#0"
-              class="card-v9 radius-md col-4@md"
-              aria-labelledby="card-title-7"
-              style={{
-                "background-image":
-                  "url('https://codyhouse.co/app/assets/img/gallery-img-5.jpg');",
-              }}
-            >
-              <div class="card-v9__content padding-md">
-                <div class="padding-bottom-xxxl max-width-xxs">
-                  <p class="text-sm color-contrast-higher color-opacity-50% margin-bottom-xxs">
-                    Friends
-                  </p>
-                  <h1 id="card-title-7" class="text-xl">
-                    Lorem ipsum dolor sit.
-                  </h1>
-                </div>
-
-                <div class="margin-top-auto">
-                  <span class="card-v9__btn">
-                    <i>Read more</i>
-                  </span>
-                </div>
-              </div>
-            </a>
+              <g
+                strokeLinecap="square"
+                strokeLinejoin="miter"
+                strokeWidth="3"
+                stroke="currentColor"
+                fill="none"
+              >
+                <circle cx="16" cy="16" r="15" opacity="0.4"></circle>
+                <path d="M16,1A15,15,0,0,1,31,16" strokeLinecap="butt"></path>
+              </g>
+            </svg>
           </div>
+
+          <ul className="masonry__list js-masonry__list">
+            {allPhotos.map((photo, index) => (
+              <figure
+                className="image-zoom js-image-zoom masonry__item js-masonry__item"
+                key={index}
+              >
+                <img
+                  className="image-zoom__preview js-image-zoom__preview block width-100%"
+                  src={photo.path}
+                />
+              </figure>
+            ))}
+          </ul>
         </div>
-      </>
+      </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const allPhotos = getAllPhotoss();
+
+  return {
+    props: { allPhotos },
+  };
 }

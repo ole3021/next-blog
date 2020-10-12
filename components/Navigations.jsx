@@ -109,10 +109,10 @@ const Navigations = (props) => {
         </ul>
 
         <div className="sidenav-v2__label">
-          <span>Other</span>
+          <span>Others</span>
         </div>
 
-        <ul className="sidenav-v2__list grid gap-xxxxs">
+        {/* <ul className="sidenav-v2__list grid gap-xxxxs">
           <li>
             <Link href="/resume">
               <a
@@ -135,7 +135,7 @@ const Navigations = (props) => {
               </a>
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
 
       <div className="margin-top-auto padding-y-xs">

@@ -9,6 +9,8 @@
 @import "./utils/diamond-grid.scss";
 @import "./utils/steps-2.scss";
 @import "./utils/choice-buttons.scss";
+@import "./utils/responsive-iframe.scss";
+@import "./utils/image-zoom.scss";
 
 // Layouts SCSS
 @import "./layouts/side-nav-layout.scss";
@@ -24,8 +26,9 @@
 @import "./components/post-card.scss";
 @import "./components/post-preview.scss";
 @import "./components/post-list-item.scss";
+@import "./components/markdown-body.css";
 
-@import "./components/photo-card.scss";
+@import "./components/photos.scss";
 
 // Forms SCSS
 @import "./components/contact-form.scss";

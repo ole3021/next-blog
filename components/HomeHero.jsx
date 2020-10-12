@@ -5,12 +5,11 @@ const HomeHero = () => {
         <div className="grid gap-md items-center">
           <div className="col-6@md">
             <div className="text-component">
-              <p className="text-sm color-contrast-medium">Geek</p>
               <h1>Hello World</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                rem neque doloribus impedit explicabo minus laborum cupiditate
-                atque esse consectetur.
+              <p className="text-md">
+                This is my personal blog site. This is the site i collect all my
+                posts, photos, experiments etc. This site still under active
+                development, more is coming...
               </p>
             </div>
 

@@ -115,9 +115,9 @@ const ContactForm = () => {
                         <path
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M2 8l4 4 8-8"
                         />
                       </svg>
@@ -147,9 +147,9 @@ const ContactForm = () => {
                         <path
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M2 8l4 4 8-8"
                         />
                       </svg>
@@ -177,9 +177,9 @@ const ContactForm = () => {
                         <path
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M2 8l4 4 8-8"
                         />
                       </svg>
@@ -243,9 +243,9 @@ const ContactForm = () => {
                     points="0.5 7.5 3.5 10.5 11.5 1.5"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></polyline>
                 </svg>
                 <span>Submit</span>

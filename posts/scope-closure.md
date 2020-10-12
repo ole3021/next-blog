@@ -3,7 +3,7 @@ title: Scope & Closure
 meta: 'Summary of JavaScript Scope and Closure knowledge based on "You Don''t Know JS" series books.'
 category: JavaScript
 tags: [Don't Know JS]
-cover: /post-images/scope_closure.jpg
+cover: /post-images/scope_closure.png
 date: "2016-03-13"
 ---
 

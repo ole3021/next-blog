@@ -3,7 +3,7 @@ title: "Git管理最佳实践"
 meta: "Git分支管理来解决多功能多版并行开发中合并和管理代码的问题。"
 category: Knowledge
 tags: [git]
-cover: /post-images/git.jpg
+cover: /post-images/git.png
 date: "2016-08-03"
 ---
 

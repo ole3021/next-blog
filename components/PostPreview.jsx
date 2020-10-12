@@ -18,14 +18,14 @@ const PostPreview = ({ post }) => {
               <dt>
                 <strong>Date</strong>
               </dt>
-              <dd>
+              <dd className="padding-top-xxxs">
                 <time dateTime={post.date}>{post.date}</time>
               </dd>
 
               <dt className="margin-top-sm">
                 <strong>Tags</strong>
               </dt>
-              <dd>
+              <dd className="padding-top-xxxs">
                 <p>{post.tags.map((tag) => tag.toUpperCase()).join(",")}</p>
               </dd>
             </dl>

@@ -9,7 +9,7 @@ const PostCard = ({ post }) => {
         </figure>
 
         <div className="card-v6__content">
-          <div className="card-v6__label">Label</div>
+          <div className="card-v6__label">{post.category}</div>
           <div className="text-component">
             <h3>{post.title}</h3>
           </div>

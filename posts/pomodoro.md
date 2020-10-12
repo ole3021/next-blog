@@ -3,7 +3,7 @@ title: "番茄工作法"
 meta: "根据大脑的工作规律总结的单项行动的计划方法，通过使用固定的工作方法来提高工作效率、减少干扰、减少压力和不必要的担忧并在过程中自我改进从容的达成预期目标。"
 category: Knowledge
 tags: [agile]
-cover: /post-images/pomodoro.jpg
+cover: /post-images/pomodoro.png
 date: "2016-03-08"
 ---
 

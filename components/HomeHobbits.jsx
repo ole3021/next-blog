@@ -16,10 +16,11 @@ const HomeHobbits = () => {
               </figure>
 
               <div className="text-component">
-                <h4>Technologies</h4>
+                <h4>Software Development</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium assumenda doloribus eos provident modi.
+                  Good software should be tools that can improve efficiency and
+                  loved by users. Beside this it should have strong internal
+                  qualities (Reliability, Availability and Maintainability).
                 </p>
               </div>
             </div>
@@ -35,10 +36,11 @@ const HomeHobbits = () => {
               </figure>
 
               <div className="text-component">
-                <h4>Games</h4>
+                <h4>Video Games</h4>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quibusdam distinctio inventore architecto.
+                  Game are the new carrier for content like books and movies.
+                  Great games should have topics and thoughs includes
+                  entertaining and playability.
                 </p>
               </div>
             </div>
@@ -56,8 +58,8 @@ const HomeHobbits = () => {
               <div className="text-component">
                 <h4>Photographing</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium assumenda doloribus eos provident modi.
+                  Photos shows beauty of the world, with different angle and
+                  control of light, all the beauty can be record and saved.
                 </p>
               </div>
             </div>
@@ -75,8 +77,9 @@ const HomeHobbits = () => {
               <div className="text-component">
                 <h4>Outdoors</h4>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quibusdam distinctio inventore architecto.
+                  City Life is not the right way to live, Hiking, Cycling, and
+                  Driving in nature is much better to improve ourself physically
+                  and mentally.
                 </p>
               </div>
             </div>

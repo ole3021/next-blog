@@ -4,13 +4,25 @@ import ReactMarkdown from "react-markdown";
 export default function PostTemplate({ content, data, slug }) {
   const frontmatter = data;
   return (
-    <div className=" padding-lg">
-      <article class="article text-component">
-        <h1>{frontmatter.title}</h1>
-        <ReactMarkdown source={content} />
-      </article>
+    <div className="position-relative z-index-1 padding-y-md">
+      <div className="container max-width-adaptive-lg">
+        <article className="bg padding-md markdown-body">
+          <h1>{frontmatter.title}</h1>
+          <br />
+          <ReactMarkdown source={content} />
+        </article>
+      </div>
     </div>
   );
+}
+
+{
+  /* <div className=" padding-lg">
+      <article className="article text-component">
+        <h1>{frontmatter.title}</h1>
+        
+      </article>
+    </div> */
 }
 
 PostTemplate.getInitialProps = async (context) => {
