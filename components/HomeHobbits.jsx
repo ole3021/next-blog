@@ -9,10 +9,7 @@ const HomeHobbits = () => {
           <div className="col-6@md">
             <div className="feature-v7__item flex gap-sm">
               <figure>
-                <img
-                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-1.jpg"
-                  alt="Image description"
-                />
+                <img src="/images/coding.png" alt="coding" />
               </figure>
 
               <div className="text-component">
@@ -29,10 +26,7 @@ const HomeHobbits = () => {
           <div className="col-6@md">
             <div className="feature-v7__item flex gap-sm">
               <figure>
-                <img
-                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-2.jpg"
-                  alt="Image description"
-                />
+                <img src="/images/game.png" alt="game" />
               </figure>
 
               <div className="text-component">
@@ -49,10 +43,7 @@ const HomeHobbits = () => {
           <div className="col-6@md">
             <div className="feature-v7__item flex gap-sm">
               <figure>
-                <img
-                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-3.jpg"
-                  alt="Image description"
-                />
+                <img src="/images/camera.png" alt="camera" />
               </figure>
 
               <div className="text-component">
@@ -68,10 +59,7 @@ const HomeHobbits = () => {
           <div className="col-6@md">
             <div className="feature-v7__item flex gap-sm">
               <figure>
-                <img
-                  src="https://codyhouse.co/app/assets/img/diamond-grid-img-4.jpg"
-                  alt="Image description"
-                />
+                <img src="/images/outdoor.png" alt="outdoor" />
               </figure>
 
               <div className="text-component">

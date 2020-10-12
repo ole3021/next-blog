@@ -31,7 +31,7 @@ const HomeHero = () => {
                 <div className="diamond-grid__item bg-contrast-lower shadow-md">
                   <img
                     className="diamond-grid__img"
-                    src="https://codyhouse.co/app/assets/img/diamond-grid-img-1.jpg"
+                    src="/images/coding.png"
                     alt="Image description"
                   />
                 </div>
@@ -39,7 +39,7 @@ const HomeHero = () => {
                 <div className="diamond-grid__item bg-contrast-lower shadow-md">
                   <img
                     className="diamond-grid__img"
-                    src="https://codyhouse.co/app/assets/img/diamond-grid-img-2.jpg"
+                    src="/images/game.png"
                     alt="Image description"
                   />
                 </div>
@@ -47,7 +47,7 @@ const HomeHero = () => {
                 <div className="diamond-grid__item bg-contrast-lower shadow-md">
                   <img
                     className="diamond-grid__img"
-                    src="https://codyhouse.co/app/assets/img/diamond-grid-img-3.jpg"
+                    src="/images/camera.png"
                     alt="Image description"
                   />
                 </div>
@@ -55,7 +55,7 @@ const HomeHero = () => {
                 <div className="diamond-grid__item bg-contrast-lower shadow-md">
                   <img
                     className="diamond-grid__img"
-                    src="https://codyhouse.co/app/assets/img/diamond-grid-img-4.jpg"
+                    src="/images/outdoor.png"
                     alt="Image description"
                   />
                 </div>
