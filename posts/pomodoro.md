@@ -3,7 +3,7 @@ title: "番茄工作法"
 meta: "根据大脑的工作规律总结的单项行动的计划方法，通过使用固定的工作方法来提高工作效率、减少干扰、减少压力和不必要的担忧并在过程中自我改进从容的达成预期目标。"
 category: Knowledge
 tags: [agile]
-cover: /post-images/pomodoro.png
+cover: /images/posts/pomodoro.png
 date: "2016-03-08"
 ---
 
@@ -22,7 +22,7 @@ date: "2016-03-08"
 与番茄工作法相似的方法还有`PDCA循环`也被称作为`品质管理循环`,它也是一个解决问题的周期流程,通常分为四步：计划（Plan）－执行（Do）－评估（Check）－应用（Act）。而番茄工作法更好在于可以忽略流程管理，专注真正要做的事（敏捷思想）。
 
 除此之外，关于番茄工作法的著作、APP、文章也比比皆是，其中不乏很多专业大型的出版社，本文中的内容就是阅读 **图灵社区（TURING）** 的 [番茄工作法图解：简单易行的时间管理方法](http://www.ituring.com.cn/book/60) 一书归纳整理而来。
-![pomodoro](/post-images/pomodoro_clock.jpg)
+![pomodoro](/images/posts/pomodoro_clock.jpg)
 
 ### 对什么人有用？
 

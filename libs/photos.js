@@ -1,7 +1,7 @@
 import fs from "fs";
 import { join } from "path";
 
-const photosDirectory = join(process.cwd(), "photos");
+const photosDirectory = join(process.cwd(), 'public', 'images', 'photos');
 
 export function getPhotoSlugs() {
   return fs.readdirSync(photosDirectory);
@@ -12,7 +12,7 @@ export function getPhotoBySlug(slug) {
 
   const items = {
     slug: realSlug,
-    path: join("/photos", slug),
+    path: join("/images/photos", slug),
   };
 
   return items;

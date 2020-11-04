@@ -3,7 +3,7 @@ title: "Git管理最佳实践"
 meta: "Git分支管理来解决多功能多版并行开发中合并和管理代码的问题。"
 category: Knowledge
 tags: [git]
-cover: /post-images/git.png
+cover: /images/posts/git.png
 date: "2016-08-03"
 ---
 
@@ -21,7 +21,7 @@ date: "2016-08-03"
 
 > 每个开发人员都可以从其他非核心 repo 中`pull`代码变更。
 
-![repos](/post-images/git_repos.png)
+![repos](/images/posts/git_repos.png)
 代码 repo 和交互关系示意图。
 
 ## 主要的分支
@@ -72,7 +72,7 @@ $ git push origin develop
 
 使用 --no-ff 取消 fast-forward, 可以保留分支存在的历史信息，并在合并的分支上生成一个新的节点, 不使用的话就会丢掉该分支存在信息。对比效果如图：
 
-![pomodoro](/post-images/git_no_ff.png)
+![pomodoro](/images/posts/git_no_ff.png)
 为了保证版本演进的清晰，我们希望采用这种做法。
 
 ### 发布分支
@@ -185,7 +185,7 @@ Deleted branch hotfix-1.2.1 (was abbe5d6).
 
 ## Git 实践分支说明图
 
-![pomodoro](/post-images/git_map.png)
+![pomodoro](/images/posts/git_map.png)
 另附高清 PDF 文件，如果需要可以打印出来供团队使用。
 [Git 实践分支说明](http://ole3021.me/files/Git-branching-model.pdf)
 

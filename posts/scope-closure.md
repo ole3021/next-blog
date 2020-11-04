@@ -3,7 +3,7 @@ title: Scope & Closure
 meta: 'Summary of JavaScript Scope and Closure knowledge based on "You Don''t Know JS" series books.'
 category: JavaScript
 tags: [Don't Know JS]
-cover: /post-images/scope_closure.png
+cover: /images/posts/scope_closure.png
 date: "2016-03-13"
 ---
 
@@ -73,7 +73,7 @@ Lexical Scoper is defined at `lexing`[^compile] time based on where variables an
 ### Scope Bubbles
 
 Scope bubbles are defined by where the blocks of scopes are written.
-![Scope](/post-images/scope.png)
+![Scope](/images/posts/scope.png)
 There are three scopes inherent in the code above. It is helf to think about these scopes as bubbles inside each other.
 
 Bubble1: Encompasses the global scope, and has just one identifier `foo`.
